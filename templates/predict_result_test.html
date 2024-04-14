@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  </head>
+  <body>
+    <br>
+    <h4> Настоящая точка: {{ real_points[0] , real_points[1]}} </h4>
+    <h4> Предполагаемая точка: {{ lat,  lon }} </h4>
+    <h4> Расстояние между точками: {{ dists }} метров </h4>
+
+  <form action="/download_txt" target="_blank">
+        <input type="submit" value="Скачать txt-файл"/>
+    </form>
+    <form action="/download_json" target="_blank">
+        <input type="submit" value="Скачать json-файл"/>
+    </form>
+      <form action="/download_csv" target="_blank">
+        <input type="submit" value="Скачать csv-файл"/>
+    </form>
+
+    </body>
+</html>
